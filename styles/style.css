@@ -20,6 +20,13 @@ a {
     height: 100vh;
     box-sizing: border-box;
     background-color: #edf1fd;
+    position: relative;
+    /*
+    background-image: url("../imgs/my_backgroud.png");
+    background-repeat: no-repeat;
+    background-size: right;
+    background-size: cover;
+    background-position: right bottom;*/
 }
 
 nav {
@@ -39,6 +46,16 @@ nav {
     background-color: blanchedalmond;
     box-shadow: 2px 5px 12px rgb(0,0,0,.05);
     z-index: 1;
+    background-image: url("../imgs/coffee.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.max-width {
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
 }
 
 .menu {
@@ -48,12 +65,13 @@ nav {
 
 .menu li a {
     padding: 10px, 15px;
-    color: #6c707c;
+    color: blanchedalmond;
     font-size: 12px
 }
 
-.menu li a:hover {
-    background-color: cadetblue;
+.menu li a:hover,
+.active {
+    background-color: rgb(90, 87, 255);
     color: #FFFFFF !important ;
     font-weight: 700;
     transition: all ease .6s;
@@ -64,8 +82,47 @@ nav {
 }
 
 .logo {
+    width:60px;
     font-size: 25px;
     font-weight: bold;
     color: #292929;
     font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.name {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 500px;
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    transform: translate(-20%, -50%);
+}
+
+.name p:nth-child(1)
+.name .details {
+    color: #6c707c;
+    font-size: 16px;
+}
+
+.name h1 {
+    font-family: cursive;
+    font-size: 40px;
+    margin: 0px;
+    letter-spacing: 3px;
+    color: #292929;
+}
+
+.cv-btn {
+    width: 200px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2e2369;
+    color: #FFFFFF;
+}
+
+.cv-btn:hover {
+    background-color: #131313;
+    transition: all ease .5s;
 }
