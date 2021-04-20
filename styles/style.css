@@ -4,7 +4,7 @@
 body {
     margin:0px;
     padding: 0px;
-    background-color:azure
+    background-color: #edf1fd;
 }
 
 ul {
@@ -66,7 +66,7 @@ nav {
 .menu li a {
     padding: 10px, 15px;
     color: blanchedalmond;
-    font-size: 12px
+    font-size: 14px
 }
 
 .menu li a:hover,
@@ -91,17 +91,18 @@ nav {
 
 .name {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    width: 500px;
+    width: 750px;
     position: absolute;
     left: 20%;
     top: 50%;
     transform: translate(-20%, -50%);
+    font-size: 20px;
 }
 
 .name p:nth-child(1)
 .name .details {
     color: #6c707c;
-    font-size: 16px;
+    font-size: 24px;
 }
 
 .name h1 {
@@ -125,4 +126,212 @@ nav {
 .cv-btn:hover {
     background-color: #131313;
     transition: all ease .5s;
+}
+
+.social {
+    position: absolute;
+    left: 50px;
+    bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    letter-spacing: 8px;
+}
+
+.social a {
+    margin: 6px;
+}
+
+.social i {
+    color: rgba(18, 17, 17, 0.4);
+    font-size: 20px;
+}
+
+.social a:hover i {
+    color: #1a17d1;
+    transition: all ease .5s;
+}
+
+
+.arrow {
+    border: solid black;
+    border-width: 10px 30px 30px 10px;
+    display: inline-block;
+    padding: 3px;
+    margin-bottom: 2em;
+    position: absolute;
+}
+  
+.right {
+transform: rotate(-45deg);
+-webkit-transform: rotate(-45deg);
+}
+
+.left {
+transform: rotate(135deg);
+-webkit-transform: rotate(135deg);
+}
+
+.up {
+transform: rotate(-135deg);
+-webkit-transform: rotate(-135deg);
+}
+
+.down {
+transform: rotate(45deg);
+-webkit-transform: rotate(45deg);
+}
+
+#about {
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5%, 5%, 0px 5%;
+    background-color: #131313;
+}
+
+.about-text {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 50%;
+    padding: 5%;
+}
+
+.about-text h1 {
+    font-size: 40px;
+    color: blanchedalmond;
+    font-weight: 400;
+    padding: 0px;
+}
+
+.about-text h2{
+    color: #FFFFFF;
+    margin: 0px;
+    padding: 0x;
+}
+
+.about-text h1, h2{
+    color: #FFFFFF;
+    margin: 0px;
+    padding: 0px;
+}
+
+.about-text p {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.938);
+}
+
+.about-text button {
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    transform: translate(-5%, -0%);
+    border: none;
+    outline: none;
+    background-color: #17d1ac;
+}
+
+.about-text button:hover {
+    background-color: #FFFFFF;
+    transition: all ease .8s;
+}
+
+#project {
+    width: 100%;
+    height: 100vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40ox;
+}
+
+.p-heading h1 {
+    color: rgba(40, 16, 175, 0.938);
+    font-size: 35px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.p-heading p {
+    color: rgb(5, 2, 26);
+    font-size: 18px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.p-heading {
+    text-align: center;
+    margin: 20px;
+    padding: 0px;
+}
+
+.p-box{
+  background-color: #2B2B2B;
+  width:500px;
+  height: 500px;
+  margin: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 2px 2px 12px rgba(0,0,0,0.1);
+  position: relative;
+}
+
+.p-b-container{
+  display: flex; 
+  justify-content: center;
+  align-content: center;
+}
+
+.p-b-img{
+    display:flex;
+    width: 100%;
+    height: 60%;
+}
+.p-b-img img{
+    width:100%;
+    height: 100%;
+
+}
+.p-b-text{
+  width: 100%;
+  height: 40%;
+  background-color:#FFFFFF;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.p-type{
+  font-family: calibri;
+  color:#FFFFFF;
+  background-color: #151515;
+  padding: 10px 15px;
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 18px;
+  border-radius: 0px 0px 10px 10px;
+  box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+}
+
+.p-box:hover{
+  transform:translateY(-10px);
+  transition: all ease 0.2s;
+}
+
+#copy-right {
+    height: 20px;
+    bottom: 5px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.copy-right-box {
+    padding: 0px;
 }
