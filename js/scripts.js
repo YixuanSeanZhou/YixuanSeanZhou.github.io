@@ -9,9 +9,9 @@ function typeWriter() {
 	sub = isDeleting ? word.substring(0, sub.length - 1) : word.substring(0, sub.length + 1)
 	document.getElementById("typewriter").innerHTML = `<span class="type">a ${sub}</span>`
 	
-	let typeSpeed = 200
+	let typeSpeed = 100
 	if (isDeleting) {
-		typeSpeed /= 2
+		typeSpeed /= 3
 	}
 
 	if (!isDeleting && sub == word) {
