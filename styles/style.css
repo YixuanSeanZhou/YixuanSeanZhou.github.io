@@ -19,14 +19,13 @@ a {
     width:100%;
     height: 100vh;
     box-sizing: border-box;
-    background-color: #edf1fd;
-    position: relative;
-    /*
-    background-image: url("../imgs/my_backgroud.png");
+    background-color: #eec972;
+
+    background-image: url("../imgs/yz.png");
     background-repeat: no-repeat;
     background-size: right;
-    background-size: cover;
-    background-position: right bottom;*/
+    background-position: right bottom;
+    background-size: auto 90%;
 }
 
 nav {
@@ -41,8 +40,9 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
+    height: 11%;
     box-sizing: border-box;
-    padding: 10px 50px;
+    padding: 0.5% 50px;
     background-color: blanchedalmond;
     box-shadow: 2px 5px 12px rgb(0,0,0,.05);
     z-index: 1;
@@ -89,14 +89,33 @@ nav {
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
+.top-topic {
+    display: flex;
+    flex-direction: row;
+    
+}
+
 .name {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    width: 750px;
+    width: 800px;
     position: absolute;
     left: 20%;
     top: 50%;
     transform: translate(-20%, -50%);
     font-size: 20px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    margin: 0px;
+    letter-spacing: 3px;
+}
+
+.type{
+    font-family: cursive;
+    color:#0e4b91;
 }
 
 .name p:nth-child(1)
@@ -107,7 +126,7 @@ nav {
 
 .name h1 {
     font-family: cursive;
-    font-size: 40px;
+    font-size: 30px;
     margin: 0px;
     letter-spacing: 3px;
     color: #292929;
@@ -239,7 +258,7 @@ transform: rotate(45deg);
 
 #project {
     width: 100%;
-    height: 100vh;
+    height: 125vh;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     display: flex;
     flex-direction: column;
@@ -269,8 +288,8 @@ transform: rotate(45deg);
 }
 
 .p-box{
-  background-color: #2B2B2B;
-  width:500px;
+  background-color: #FFFFFF;
+  width: 500px;
   height: 500px;
   margin: 20px;
   border-radius: 10px;
@@ -293,16 +312,60 @@ transform: rotate(45deg);
 .p-b-img img{
     width:100%;
     height: 100%;
-
 }
+
 .p-b-text{
-  width: 100%;
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 90%;
   height: 40%;
   background-color:#FFFFFF;
   display:flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+.p-b-text p {
+    display: inline;
+    height: 50%;
+    margin: 0%;
+}
+
+.p-b-p-t {
+    width: 80%;
+    height: 40%;
+    background-color:#FFFFFF;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+.p-b-p-t p {
+    background-color:#FFFFFF;
+    display: contents;
+  }
+
+.position {
+    color: rgb(16, 12, 44);
+    font-family:fantasy;
+    
+}
+
+.time {
+    color: #6c707c;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.p-b-t-c {
+    display: inline;
+    width: 80%;
+    text-align: left;
+    color: #5a6583;
+    font-size: 16px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style:normal;
 }
 
 .p-type{
@@ -314,10 +377,11 @@ transform: rotate(45deg);
   top: 0px;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 18px;
+  font-size: 20px;
   border-radius: 0px 0px 10px 10px;
   box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
 }
+
 
 .p-box:hover{
   transform:translateY(-10px);
