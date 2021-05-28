@@ -342,10 +342,18 @@ transform: rotate(45deg);
     text-align: center;
   }
 
-.p-b-p-t p {
+.p-b-p-t {
+    width: 80%;
+    height: 40%;
     background-color:#FFFFFF;
-    display: contents;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
+
+.p-b-p-t-2 p {
+    text-align: left;
+}
 
 .position {
     color: rgb(16, 12, 44);
