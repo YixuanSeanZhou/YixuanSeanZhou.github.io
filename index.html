@@ -6,7 +6,9 @@
     <meta charset="utf-8">
     <meta name="viewport", content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body class="bg-light">
@@ -17,7 +19,6 @@
           <a class="navbar-brand text-danger fw-bold fs-4" href="#">Yixuan Zhou</a>
           <div class="dropdown">
             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                <span class="glyphicon glyphicon-align-left" aria-hidden="true"></span>
             </button>
             
             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
@@ -34,21 +35,35 @@
     <!--navbar end-->
 
     <!--home section start-->
-    <div class="py-1"></div>
+    <div class="py-5"></div>
     <section class="home py-5" id="home">
         <div class="container-lg">
-            <div class="row min-vh-100 align-items-center align-content-center">
+            <div class="row min-vh-75 align-items-center align-content-center">
                 <div class="col-md-6">
                     <div class="home-img text-center">
-                        <img src="imgs/yz-circle.png", class="rounded-circle mw-100" alt="profile img">
+                        <img src="imgs/yz-circle.png", class="rounded-circle mh-100" alt="profile img">
                     </div>
                 </div>
                 <div class="col-md-6 order-md-first">
                     <div class="home-text">
-                        <p class="text-muted mb-1">I'm</p>
+                        <p class="text-muted mb-1">Hello, I'm</p>
                         <h1 class="text-danger text-uppercase fs-1 fw-bold font_monda">Yixuan Zhou</h1>
                         <h2 id="typewriter"></h2>
                         <a href="src/Yixuan_Zhou_Resume.pdf" class="btn btn-danger px-3">Download Resume</a>
+                        <div class="row py-2">
+                            <div class="social-links text-muted">
+                                <a href="https://www.facebook.com/profile.php?id=100014601372408" class="text-decoration-none px-1">
+                                    <i class="bi bi-facebook"></i>
+                                </a>
+                                <a href="https://github.com/YixuanSeanZhou" class="text-decoration-none px-1">
+                                    <i class="bi bi-linkedin"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/yixuan-zhou-355411157/" class="text-decoration-none px-1">
+                                    <i class="bi bi-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -59,44 +74,159 @@
 
     <!--about section start-->
     <section class="about bg-white" id="about">
-        <div class="container-lg py-5">
-            <div class="col-lg-8">
-                <div class="section-title">
-                    <h2>About Me</h2>
-                    <p class="mt-4 text-muted">
+        <div class="container-lg py-5 justify-content-center">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-title text-center">
+                        <h2 class="fw-bold mb-5"> About Me </h2>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <p class="mt-6 fs-5 text-muted">
                         I am <i>Yixuan Zhou</i>.
-                        I am currently a junior completing my bachelor degree at University of California San Diego.
+                        I am an incoming senior at University of California San Diego.
                         I double major in <i>Computer Science and Engineering and Mathematics with an emphasis on Probability and Statistics.</i><br> 
                         <br>
-                        Aside of my school work, I am a part-time analyst at 
+                        Aside of my school work, I am interning as a software engineer at <a href="https://www.bentley.com/en">Bentley Systems Inc</a>.
+                        <br>
+    
+                        Also, during the school year, I was a part-time analyst at 
                         <a href="https://www.goldensetanalytics.com/">Golden Set Analytics</a>
                         in which I build models to predict the result of tennis matches.<br>
-                        <br>
-    
-                        Also, I interned as a software engineer at <a href="https://www.bentley.com/en">Bentley Systems Inc.</a>
-                        <br>
     
                         <br>
-    
                         What's more, I am the head tutor of the class 
                         <a href="http://ieng6.ucsd.edu/~cs12x/">
                             Baisc Data Structure and Object-Oriented Design
                         </a>, where I help professor <a href="https://cse.ucsd.edu/people/faculty-profiles/gary-gillespie">Gary Gillespie</a>
                         to design course assignments and guide students in improving code correctness, 
-                        efficiency of algorithm implementation, and performance.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="about-text">
-                        <h3>Yixuan Zhou</h3>
-                    </div>
+                        efficiency of algorithm implementation, and performance.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
     <!--about section end-->
+
+    <!--experience section start-->
+
+    <section class="experiences bg-white py-5" id="experiences">
+        <div class="container-lg">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-title text-center">
+                        <h2 class="fw-bold mb-5"> Work Experiences </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-4">
+                    <img src="imgs/bentleylogo.jpeg" class="img-fluid rounded mx-auto d-block img-thumbnail overflow-hidden" alt="cse tutor">
+                    <h3 class="text-lg-center text-info fs-4">
+                        SWE Intern @ Bentley Systems Inc.
+                    </h3>
+                    <p class="text-muted fs-5 text-lg-center">
+                        September 2019 - Present<br>
+                    </p>
+                    <p class="fs-5 fw-light">
+                        I worked in the CSE department at UCSD under Professor <a href="https://jacobsschool.ucsd.edu/faculty/profile?id=300">Gary Gillespie</a>.
+                                    
+                        The courses I've worked with 
+                        CSE 12 (Basic Data Structures) and CSE 15L (Software Tools)
+                        I have been a head tutor for CSE 12 from Winter 2021.
+                    </p>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="justify-content-center">
+                        <img src="imgs/cse_tutor.jpeg" class="img-fluid rounded mx-auto d-block img-thumbnail" alt="cse tutor">
+                    </div>
+                    <h3 class="text-lg-center text-info fs-4">
+                        UCSD CSE Tutorship
+                    </h3>
+                    <p class="text-muted fs-5 text-lg-center">
+                        September 2019 - Present<br>
+                    </p>
+                    <p class="fs-5 fw-light">
+                        I worked in the CSE department at UCSD under Professor <a href="https://jacobsschool.ucsd.edu/faculty/profile?id=300">Gary Gillespie</a>.
+                                    
+                        The courses I've worked with 
+                        CSE 12 (Basic Data Structures) and CSE 15L (Software Tools)
+                        I have been a head tutor for CSE 12 from Winter 2021.
+                    </p>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <img src="imgs/cse_tutor.jpeg" class="w-100 img-thumbnail" alt="cse tutor">
+                    <h3 class="text-lg-center text-info fs-4">
+                        UCSD CSE Tutorship
+                    </h3>
+                    <p class="text-muted fs-5 text-lg-center">
+                        September 2019 - Present<br>
+                    </p>
+                    <p class="fs-5 fw-light">
+                        I worked in the CSE department at UCSD under Professor <a href="https://jacobsschool.ucsd.edu/faculty/profile?id=300">Gary Gillespie</a>.
+                                    
+                        The courses I've worked with 
+                        CSE 12 (Basic Data Structures) and CSE 15L (Software Tools)
+                        I have been a head tutor for CSE 12 from Winter 2021.
+                    </p>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <img src="imgs/cse_tutor.jpeg" class="w-100 img-thumbnail" alt="cse tutor">
+                    <h3 class="text-lg-center text-info fs-4">
+                        UCSD CSE Tutorship
+                    </h3>
+                    <p class="text-muted fs-5 text-lg-center">
+                        September 2019 - Present<br>
+                    </p>
+                    <p class="fs-5 fw-light">
+                        I worked in the CSE department at UCSD under Professor <a href="https://jacobsschool.ucsd.edu/faculty/profile?id=300">Gary Gillespie</a>.
+                                    
+                        The courses I've worked with 
+                        CSE 12 (Basic Data Structures) and CSE 15L (Software Tools)
+                        I have been a head tutor for CSE 12 from Winter 2021.
+                    </p>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <img src="imgs/cse_tutor.jpeg" class="w-100 img-thumbnail" alt="cse tutor">
+                    <h3 class="text-lg-center text-info fs-4">
+                        UCSD CSE Tutorship
+                    </h3>
+                    <p class="text-muted fs-5 text-lg-center">
+                        September 2019 - Present<br>
+                    </p>
+                    <p class="fs-5 fw-light">
+                        I worked in the CSE department at UCSD under Professor <a href="https://jacobsschool.ucsd.edu/faculty/profile?id=300">Gary Gillespie</a>.
+                                    
+                        The courses I've worked with 
+                        CSE 12 (Basic Data Structures) and CSE 15L (Software Tools)
+                        I have been a head tutor for CSE 12 from Winter 2021.
+                    </p>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <img src="imgs/cse_tutor.jpeg" class="w-100 img-thumbnail" alt="cse tutor">
+                    <h3 class="text-lg-center text-info fs-4">
+                        UCSD CSE Tutorship
+                    </h3>
+                    <p class="text-muted fs-5 text-lg-center">
+                        September 2019 - Present<br>
+                    </p>
+                    <p class="fs-5 fw-light">
+                        I worked in the CSE department at UCSD under Professor <a href="https://jacobsschool.ucsd.edu/faculty/profile?id=300">Gary Gillespie</a>.
+                                    
+                        The courses I've worked with 
+                        CSE 12 (Basic Data Structures) and CSE 15L (Software Tools)
+                        I have been a head tutor for CSE 12 from Winter 2021.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--experience section start-->
 
     <script src="js/typewriter.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
