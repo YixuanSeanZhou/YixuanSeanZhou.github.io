@@ -1,0 +1,26 @@
+/* include Google Web fonts: */
+@import url('https://fonts.googleapis.com/css?family=Meie+Script|Shadows+Into+Light|Arvo|Monda');
+
+.row {
+  font-size: 22pt;
+  font-weight: 600;
+}
+
+.font_meie_script {
+  font-family: 'Meie Script', cursive;
+}
+
+.font_shadows_into_light {
+  font-family: 'Shadows Into Light', cursive;
+}
+
+.font_arvo {
+  font-family: 'Arvo', serif;
+  font-style: italic;
+  font-weight: 400;
+}
+
+
+.font_monda {
+  font-family: 'Monda', sans-serif;
+}

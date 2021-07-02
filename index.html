@@ -1,271 +1,104 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>Yixuan Zhou's Website</title>
-        <link rel='Icon' href="./imgs/mypic.jpeg">
+<html lang="en">
 
-        <link rel='stylesheet' href="styles/style.css">
+<head>
+    <title> Yixuan Zhou Person Websit </title>
+    <meta charset="utf-8">
+    <meta name="viewport", content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
 
-        <!--using fontawesome-->
-        <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+<body class="bg-light">
 
-    </head>
-    <boday>
-        <section id="main">
-            <!--nav sec-->
-            <nav class="navbar">
-                <!--
-                <img class="logo" src="imgs/mypic.jpeg" alt="Italian Trulli">
-                -->
-
-                <div></div>
-                <ul class="menu">
-                    <li><a href="#" class="menu">Home</a></li>
-                    <li><a href="#" class="menu">About</a></li>
-                    <li><a href="#" class="menu">Jobs</a></li>
-                    <li><a href="#" class="menu">Otherthings</a></li>
-                    <li><a href="#" class="menu">Contact</a></li>
-                </ul>
+    <!--navbar start-->
+    <nav class="navbar navbar-light fixed-top bg-light shadow-sm">
+        <div class="container-lg">
+          <a class="navbar-brand text-danger fw-bold fs-4" href="#">Yixuan Zhou</a>
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="glyphicon glyphicon-align-left" aria-hidden="true"></span>
+            </button>
             
-                <div>
-                    <a href="#" class="lang"> EN </a>
-                    <!--
-                    <a href="#" class="lang"> 中文 </a>
-                    -->
-                </div>
-            </nav>
-            <div class="name">
-                <p>Hello,</p>
-                <div class="row">
-                    <div>
-                        <h1>I am
-                        <font color="#0963F9">Yixuan</font> Zhou,&nbsp;
-                        </h1>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#home">Home</a></li>
+              <li><a class="dropdown-item" href="#about">About</a></li>
+              <li><a class="dropdown-item" href="#experiences">Experiences</a></li>
+              <li><a class="dropdown-item" href="#projects">Projects</a></li>
+              <li><a class="dropdown-item" href="#contacts">Contacts</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <!--navbar end-->
+
+    <!--home section start-->
+    <div class="py-1"></div>
+    <section class="home py-5" id="home">
+        <div class="container-lg">
+            <div class="row min-vh-100 align-items-center align-content-center">
+                <div class="col-md-6">
+                    <div class="home-img text-center">
+                        <img src="imgs/yz-circle.png", class="rounded-circle mw-100" alt="profile img">
                     </div>
-                    <div class="type">
+                </div>
+                <div class="col-md-6 order-md-first">
+                    <div class="home-text">
+                        <p class="text-muted mb-1">I'm</p>
+                        <h1 class="text-danger text-uppercase fs-1 fw-bold font_monda">Yixuan Zhou</h1>
                         <h2 id="typewriter"></h2>
-                    </div>
-                </div>
-                <p classs="details">
-                    I am current a junior completing my bacchler degree at University of California San Diego.<br>
-                    I double major in Computer Science and Engineering and Mathematics with an emphasis on Probability and Statistics.<br> 
-                    <br>
-                    Aside of my school work, I am a part-time analyst at 
-                    <a href="https://www.goldensetanalytics.com/">Golden Set Analytics</a>
-                    in which I build models to predict the result of tennis matches.<br>
-                    <br>
-
-                    Also, I am an incoming software engineering intern at <a href="https://www.bentley.com/en">Bentley Systems Inc.</a>
-                    <br>
-
-                    <br>
-
-                    What's more, I am the head tutor of the class 
-                    <a href="http://ieng6.ucsd.edu/~cs12x/">
-                        Baisc Data Structure and Object-Oriented Design
-                    </a>, where I help professor <a href="https://cse.ucsd.edu/people/faculty-profiles/gary-gillespie">Gary Gillespie</a>
-                    to design course assignments and guide students in improving code correctness, 
-                    efficiency of algorithm implementation, and performance.
-                </p>
-                <a href="src/Yixuan_Zhou_Resumega.pdf" class="cv-btn">Download CV</a>
-            </div>
-
-            <!---social contact-->
-
-            <div class="social">
-                <a href="https://www.facebook.com/profile.php?id=100014601372408"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://github.com/YixuanSeanZhou"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/yixuan-zhou-355411157/"><i class="fab fa-linkedin"></i></a>
-            </div>
-
-        </section>
-
-        <section id="about">
-            <div class="about-text">
-                <h1>
-                    About Me
-                </h1>
-                <h2>
-                    abcdefg
-                </h2>
-                <p>
-
-                    okkkkkk
-
-                </p>
-                <button>
-                    More Details
-                </button>
-
-            </div>
-            
-        </section>
-
-        <section id="project">
-            <div class="p-heading">
-                <h1>
-                    Projects & Experiences
-                </h1>
-                <p>Here is what i have done</p>
-            </div>
-            <div class="p-b-container">
-                <a href="https://autograder.ucsd.edu/">
-                    <div class="p-box">
-                        <div class="p-b-img">
-                            <img src="imgs/ag_project.png">
-
-                        </div>
-                        <div class="p-type">Autograder</div>
-                        <div class="p-b-text">
-                            <p class="p-b-p-t">
-                                <p class="position">
-                                    Lead Full-Stack Developer<br>
-                                </p>
-                                <p class="time">
-                                    September 2019 - Present<br>
-                                </p>
-                                <p class="p-b-t-c">
-                                    I am managing and developing on a team revamping 
-                                    a legacy web application used by 3000+ UCSD CSE 
-                                    students and professors to manage tutor queues and 
-                                    assignments.
-                                    I am leading backend development of a codebase 
-                                    rewrite to provide an easily maintainable 
-                                    and improved database system and Web API.<br>
-                                </p>
-                            </p>
-                        </div>
-                        
-                    </div>
-                </a>
-                <div class="p-box">
-                    <a href="http://chf.ucsd.edu/project-limbitless/">
-                    <div class="p-b-img">
-                        <img src="imgs/limbitless-in-india.jpeg">
-
-                    </div>                    
-                </a>
-                    <div class="p-type">Lim[b]itless</div>
-                    <div class="p-b-text">
-                        <p class="p-b-p-t">
-                            <p class="position">
-                                Image Segmentation Researcher<br>
-                            </p>
-                            <p class="time">
-                                October 2020 - Present<br>
-                            </p>
-                            <p class="p-b-t-c">
-                                I am resarching in the Lim[b]itless group
-                                at <a href="https://qi.ucsd.edu/">Qualcommon Insitute</a>
-                                working building a pipline that increase the 
-                                avlability of prosthesis to the amuptees.
-                                I am in charge of using transfer learning
-                                over the DeepLab deep learning network to perform 
-                                backgroud removal on the input images.<br>
-                            </p>
-                        </p>
-
-                    </div>
-
-                </div>
-
-                <div class="p-box">
-                    
-                    <a href="https://www.goldensetanalytics.com/">
-                        <div class="p-b-img">
-                            <img src="imgs/gsa.png">
-
-                        </div>
-                    </a>
-                    <div class="p-type">Golden Set Analytics</div>
-                    <div class="p-b-text">
-                        <p class="p-b-p-t">
-                            <p class="position">
-                                Training Analyst<br>
-                            </p>
-                            <p class="time">
-                                January 2021 - Present<br>
-                            </p>
-                            <p class="p-b-t-c">
-                                I am using Markov process to model the evolution
-                                of a tennis game. Based on the elo-rankings of players
-                                I can perform in-match perdiction of the results of
-                                the tennis game.
-                                <br>
-                            </p>
-                        </p>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="p-b-container">
-                
-                    <div class="p-box">
-                        <a href="https://cse.ucsd.edu/undergraduate/undergraduate-tutors">
-                        <div class="p-b-img">
-                            <img src="imgs/cse_tutor.jpeg">
-
-                        </div>
-                        </a>
-                        <div class="p-type">UCSD CSE Tutorship</div>
-                        <div class="p-b-text">
-                            <p class="p-b-p-t">
-                                <p class="position">
-                                    Undergraduate TA<br>
-                                </p>
-                                <p class="time">
-                                    September 2019 - Present<br>
-                                </p>
-                                <p class="p-b-t-c">
-                                    I worked in the CSE department at UCSD under Professor <a href="https://jacobsschool.ucsd.edu/faculty/profile?id=300">Gary Gillespie</a>.
-                                    
-                                    The courses I've worked with 
-                                    CSE 12 (Basic Data Structures) and CSE 15L (Software Tools)
-                                    I have been a head tutor for CSE 12 from Winter 2021.
-                                </p>
-                            </p>
-                        </div>
-                    </div>
-
-                <div class="p-box">
-                    <a href="https://math.ucsd.edu/undergraduate/honors-program/honors-program-information/index.html">
-                    <div class="p-b-img">
-                        <img src="imgs/h.png">
-
-                    </div>                    
-                    </a>
-                    <div class="p-type">UCSD Math Honor Project</div>
-                    <div class="p-b-text">
-                        <p class="p-b-p-t">
-                            <p class="position">
-                                Image Segmentation Researcher<br>
-                            </p>
-                            <p class="time">
-                                October 2020 - Present<br>
-                            </p>
-                            <p class="p-b-t-c">
-                                I am completing my honor's project under Professor <a href="http://www.math.ucsd.edu/~mdressler/">Mareike Dressler</a>. 
-
-                                I am investigating on the numerical effects that
-                                different polynomial bases have when trying to 
-                                certificate the nonegativity of polynomails.
-                                A working version of my thesis can be viewd <a href="src/main.pdf">here</a>.
-                            </p>
-                        </p>
+                        <a href="src/Yixuan_Zhou_Resume.pdf" class="btn btn-danger px-3">Download Resume</a>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+ 
+    <!--home section end-->
 
-        </section>
-
-        
-        <section id="copy-right">
-            <div class="copy-right-box">
-                <p>Copyright © 2021 Yixuan Zhou</p>
+    <!--about section start-->
+    <section class="about bg-white" id="about">
+        <div class="container-lg py-5">
+            <div class="col-lg-8">
+                <div class="section-title">
+                    <h2>About Me</h2>
+                    <p class="mt-4 text-muted">
+                        I am <i>Yixuan Zhou</i>.
+                        I am currently a junior completing my bachelor degree at University of California San Diego.
+                        I double major in <i>Computer Science and Engineering and Mathematics with an emphasis on Probability and Statistics.</i><br> 
+                        <br>
+                        Aside of my school work, I am a part-time analyst at 
+                        <a href="https://www.goldensetanalytics.com/">Golden Set Analytics</a>
+                        in which I build models to predict the result of tennis matches.<br>
+                        <br>
+    
+                        Also, I interned as a software engineer at <a href="https://www.bentley.com/en">Bentley Systems Inc.</a>
+                        <br>
+    
+                        <br>
+    
+                        What's more, I am the head tutor of the class 
+                        <a href="http://ieng6.ucsd.edu/~cs12x/">
+                            Baisc Data Structure and Object-Oriented Design
+                        </a>, where I help professor <a href="https://cse.ucsd.edu/people/faculty-profiles/gary-gillespie">Gary Gillespie</a>
+                        to design course assignments and guide students in improving code correctness, 
+                        efficiency of algorithm implementation, and performance.</p>
+                </div>
             </div>
-            <script src="js/scripts.js"></script>    
-        </section>
-    </boday>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="about-text">
+                        <h3>Yixuan Zhou</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--about section end-->
+
+    <script src="js/typewriter.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
