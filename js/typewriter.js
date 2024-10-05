@@ -1,4 +1,4 @@
-typewriterPhrases = ["computer scientist.", "software engineer.", "student.", "researcher.", "frisbee player."]
+typewriterPhrases = ["computer scientist.", "software engineer.", "life long learner.", "frisbee player."]
 wordIndex = 0
 wait = 1500
 isDeleting = false
