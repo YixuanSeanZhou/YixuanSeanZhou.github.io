@@ -28,6 +28,7 @@
               <li><a class="dropdown-item" href="#home">Home</a></li>
               <li><a class="dropdown-item" href="#about">About</a></li>
               <li><a class="dropdown-item" href="#experiences">Experiences</a></li>
+              <li><a class="dropdown-item" href="#researches">Researches</a></li>
               <li><a class="dropdown-item" href="#contacts">Contacts</a></li>
             </ul>
           </div>
@@ -87,24 +88,14 @@
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <p class="mt-6 fs-5 text-muted">
-                        I am <i>Yixuan Zhou</i>.
-                        I am currently a senior at University of California San Diego.
-                        I double major in <i>Computer Science </i> and <i> Engineering and Mathematics with an emphasis on Probability and Statistics.</i><br> 
-                        <br>
-                        After graduation, I will start my full-time position at <a href="https://stripe.com/">Stripe</a> next summer in Seattle.<br>
-                        <br>
-                        Aside of my school work, I interned as a software engineer at <a href="https://www.bentley.com/en">Bentley Systems Inc</a> in summer 2021.
-                        <br>
-                        Also, during the school year, I was a part-time analyst at 
-                        <a href="https://www.goldensetanalytics.com/">Golden Set Analytics</a>
-                        in which I build models to predict the result of tennis matches.<br>
-    
-                        <br>
-                        What's more, I am the head tutor of the class 
-                        <a href="http://ieng6.ucsd.edu/~cs12x/">Baisc Data Structure and Object-Oriented Design</a>,
-                        where I help Professor <a href="https://cse.ucsd.edu/people/faculty-profiles/gary-gillespie">Gary Gillespie</a>
-                        to design course assignments and guide students in improving code correctness, 
-                        efficiency of algorithm implementation, and performance.
+                        I am a software engineer on the ML Model Compiler Team at Nuro.
+                        My work involves accelerate ML model inference speed after training, both from the infra and the modeling perspective.
+                        <br \>
+                        <br \>
+                        During college, I researched on quantization with Professor <a href="https://mathweb.ucsd.edu/~rsaab/">Rayan Saab</a>.
+                        <br \>
+                        <br \>
+                        In my free time, I enjoyed playing ultimate frisbee!
                     </p>
                 </div>
             </div>
@@ -119,155 +110,184 @@
         <div class="py-2"></div>
         <div class="container-lg">
             <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="section-title text-center">
-                        <h2 class="fw-bold mb-5"> Work Experiences </h2>
+                <div class="col-lg-8  mb-4">
+                    <div class="section-title text-center d-flex align-items-center justify-content-center">
+                        <h2 class="fw-bold mb-0 me-3" style="line-height: 1.2;">  <!-- Use 'mb-0' to remove bottom margin -->
+                            Work Experiences
+                        </h2>
+                        <!-- Collapsible Toggle Button with Bootstrap Icon -->
+                        <button class="btn btn-outline-primary" type="button" data-bs-toggle="collapse" data-bs-target="#workExperiences" aria-expanded="true" aria-controls="workExperiences" style="width: 35px; height: 35px; display: flex; align-items: center; justify-content: center;">
+                            <i class="bi bi-chevron-down" id="toggleIcon"></i>  <!-- Change icon to down -->
+                        </button>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-6 col-lg-4">
-                    <div class="portfoli-item justify-content-center">
-                        <a href="https://www.nuro.ai/">
-                            <img src="imgs/Nuro.avif" alt="img" class="img-thumbnail">
-                        </a>
-                        <h4 class="text-primary text-capitalize text-center">
-                            ML Infra SWE @ Nuro
-                        </h4>
-                        <p class="text-muted fs-5 fw-lighter text-center">Mar 2024 - Present</p>
-                        <p class="fw-light fs-5">
-                            I am a software engineer on the ML Infra team, working on an <a href="https://medium.com/nuro/ftl-model-compiler-framework-d6b85c670f67">ML compiler</a> that optimizes inference latency for models on autonomous vehicles. 
-                            Currently, I am exploring quantization to accelerate inference on cost-effective GPUs optimized for low-precision calculations.
-                        </p>
+    
+            <!-- Collapsible Section -->
+            <div class="collapse show" id="workExperiences">
+                <div class="row">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="portfoli-item justify-content-center">
+                            <a href="https://www.nuro.ai/">
+                                <img src="imgs/Nuro.avif" alt="img" class="img-thumbnail">
+                            </a>
+                            <h4 class="text-primary text-capitalize text-center">
+                                ML Infra SWE @ Nuro
+                            </h4>
+                            <p class="text-muted fs-5 fw-lighter text-center">Mar. 2024 - Present</p>
+                            <p class="fw-light fs-5">
+                                I am a software engineer on the ML Infra team, working on an <a href="https://medium.com/nuro/ftl-model-compiler-framework-d6b85c670f67">ML compiler</a> that optimizes inference latency for models on autonomous vehicles. 
+                                Currently, I am exploring quantization to accelerate inference on cost-effective GPUs optimized for low-precision calculations.
+                            </p>
+                        </div>
+                    </div>
+    
+                    <div class="col-md-6 col-lg-4">
+                        <div class="portfoli-item justify-content-center">
+                            <a href="https://squareup.com/us/en">
+                                <img src="imgs/Square.png" alt="img" class="img-thumbnail">
+                            </a>
+                            <h4 class="text-primary text-capitalize text-center">
+                                Full stack SWE @ Square
+                            </h4>
+                            <p class="text-muted fs-5 fw-lighter text-center">Nov. 2023 - Mar. 2024</p>
+                            <p class="fw-light fs-5">
+                                I was a software engineer on the payment onboarding team, focusing on the merchant registration process to integrate them into the Square ecosystem. 
+                                I collaborated with product managers, designers, and engineers to develop new features for the Canada registration process, ensuring compliance with CA KYB requirements.
+                            </p>
+                        </div>
+                    </div>
+    
+                    <div class="col-md-6 col-lg-4">
+                        <div class="portfoli-item justify-content-center">
+                            <a href="https://stripe.com/">
+                                <img src="imgs/Stripe-image.png" alt="img" class="img-thumbnail">
+                            </a>
+                            <h4 class="text-primary text-capitalize text-center">
+                                Software Engineer @ Stripe
+                            </h4>
+                            <p class="text-muted fs-5 fw-lighter text-center">Sept. 2022 - Nov. 2021</p>
+                            <p class="fw-light fs-5">
+                                As part of the Stripe's privacy infrastructure team, 
+                                I designed and implemented an ML-based workflow to automatically infer metadata within Stripe's data ecosystem, integrating it with Trino for attribute-based access control and enabling data obfuscation during queries. 
+                                Additionally, I helped develop a data annotation system and collaborated with cross-functional teams to build tools that facilitated its adoption.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="portfoli-item justify-content-center">
+                            <a href="https://www.bentley.com/en">
+                                <img src="imgs/bentley.png" alt="img" class="img-thumbnail">
+                            </a>
+                            <h4 class="text-primary text-capitalize text-center">
+                                SWE Intern @ Bentley Systems
+                            </h4>
+                            <p class="text-muted fs-5 fw-lighter text-center">Jun. 2021 - Sept. 2021</p>
+                            <p class="fw-light fs-5">
+                                As a Software Engineer Intern on the Simulacra project, I redesigned a distributed system to enhance scalability, which significantly reduced user response time. 
+                                I optimized the naive K-means algorithm for the 'rendering items on map' feature, achieving a 1,000x speed improvement and creating a smoother user experience. 
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="portfoli-item justify-content-center">
+                            <a href="https://cse.ucsd.edu/undergraduate/readers-and-tutors">
+                                <img src="imgs/tutor.png" alt="autograder" class="img-thumbnail">
+                            </a>
+                            <h4 class="text-primary text-capitalize text-center">
+                                CSE Undergraduate TA @ UCSD
+                            </h4>
+                            <p class="text-muted fs-5 fw-lighter text-center">Apr. 2019 - Dec. 2021</p>
+                            <p class="fw-light fs-5">
+                                I worked in the CSE department at UCSD under Professor
+                                <a href="https://jacobsschool.ucsd.edu/faculty/profile?id=300">Gary Gillespie</a>.
+                                I worked as an undergraduate TA for 
+                                CSE 12 (Basic Data Structures) and CSE 15L (Software Tools).
+                                I was the head tutor for CSE 12 from Winter 2021.
+                            </p>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="experiences bg-white py-5" id="researches">
+        <div class="py-2"></div>
+        <div class="container-lg">
+            <div class="row justify-content-center">
+                <div class="col-lg-8  mb-4">
+                    <div class="section-title text-center d-flex align-items-center justify-content-center">
+                        <h2 class="fw-bold mb-0 me-3" style="line-height: 1.2;">  <!-- Use 'mb-0' to remove bottom margin -->
+                            Research Experiences
+                        </h2>
+                        <!-- Collapsible Toggle Button with Bootstrap Icon -->
+                        <button class="btn btn-outline-primary" type="button" data-bs-toggle="collapse" data-bs-target="#workExperiences" aria-expanded="true" aria-controls="workExperiences" style="width: 35px; height: 35px; display: flex; align-items: center; justify-content: center;">
+                            <i class="bi bi-chevron-down" id="toggleIcon"></i>  <!-- Change icon to down -->
+                        </button>
                     </div>
                 </div>
-
-                <div class="col-md-6 col-lg-4">
-                    <div class="portfoli-item justify-content-center">
-                        <a href="https://squareup.com/us/en">
-                            <img src="imgs/Square.png" alt="img" class="img-thumbnail">
-                        </a>
-                        <h4 class="text-primary text-capitalize text-center">
-                            Full stack SWE @ Square
-                        </h4>
-                        <p class="text-muted fs-5 fw-lighter text-center">Nov 2023 - Mar 2024</p>
-                        <p class="fw-light fs-5">
-                            I was a software engineer on the payment onboarding team, focusing on the merchant registration process to integrate them into the Square ecosystem. 
-                            I collaborated with product managers, designers, and engineers to develop new features for the Canada registration process, ensuring compliance with CA KYB requirements.
-                        </p>
+            </div>
+    
+            <!-- Collapsible Section -->
+            <div class="collapse show" id="workExperiences">
+                <div class="row">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="portfoli-item justify-content-center">
+                            <a href="https://www.nuro.ai/">
+                                <img src="imgs/quantization.png" alt="img" class="img-thumbnail">
+                            </a>
+                            <h4 class="text-primary text-capitalize text-center">
+                                GPFQ Quantization
+                            </h4>
+                            <p class="text-muted fs-5 fw-lighter text-center">Mar. 2024 - Present</p>
+                            <p class="fw-light fs-5">
+                                I worked with Professor <a href="https://mathweb.ucsd.edu/~rsaab/">Rayan Saab</a> and his <a href="https://jayzhang0727.github.io/">Ph.D Jinjie Zhang</a> on developing a greedy path-following algorithm that performs quantization on pre-trained ML models with provable error bounds. 
+                                I implemented the algorithm in PyTorch. I conducted experiments using AWS to quantize state-of-the-art neural networks (ResNets, VGGs, etc.) to verify the effectiveness of the algorithm. 
+                            </p>
+                        </div>
                     </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4">
-                    <div class="portfoli-item justify-content-center">
-                        <a href="https://www.bentley.com/en">
-                            <img src="imgs/bentley.png" alt="img" class="img-thumbnail">
-                        </a>
-                        <h4 class="text-primary text-capitalize text-center">
-                            SWE Intern @ Bentley Systems
-                        </h4>
-                        <p class="text-muted fs-5 fw-lighter text-center">June 2021 - September 2021</p>
-                        <p class="fw-light fs-5">
-                            I have finished my internship, and I will write more about it later...
-                        </p>
+    
+                    <div class="col-md-6 col-lg-4">
+                        <div class="portfoli-item justify-content-center">
+                            <a href="http://chf.ucsd.edu/project-limbitless/">
+                                <img src="imgs/lim.png" alt="img" class="img-thumbnail">
+                            </a>
+                            <h4 class="text-primary text-capitalize text-center">
+                                Project Lim[b]itless
+                            </h4>
+                            <p class="text-muted fs-5 fw-lighter text-center">Oct. 2020 - Jun. 2022</p>
+                            <p class="fw-light fs-5">
+                                I was an undergraduate researcher in the Lim[b]itless group
+                                at <a href="https://qi.ucsd.edu/">Qualcomm Insitute</a>
+                                working building a pipeline that increase the 
+                                availability of prosthesis to the amputees.
+                                I worked on using transfer learning
+                                over the DeepLab deep learning network to perform 
+                                background removal on the input images.
+                            </p>
+                        </div>
                     </div>
-                </div>
-
-                <!-- <div class="col-md-6 col-lg-4">
-                    <div class="portfoli-item justify-content-center">
-                        <a href="https://www.goldensetanalytics.com/">
-                            <img src="imgs/gsa.png" alt="img" class="img-thumbnail">
-                        </a>
-                        <h4 class="text-primary text-capitalize text-center">
-                            Analyst @ Golden Set analytics
-                        </h4>
-                        <p class="text-muted fs-5 fw-lighter text-center">February 2021 - June 2021</p>
-                        <p class="fw-light fs-5">
-                            I am using Markov process to model the evolution
-                            of a tennis game. Based on the <a href="https://en.wikipedia.org/wiki/Elo_rating_system">elo rankings</a> of players
-                            I perform both pre-match and in-match perdiction of the results of
-                            the tennis game.
-                        </p>
-                    </div>
-                </div> -->
-
-                <div class="col-md-6 col-lg-4">
-                    <div class="portfoli-item justify-content-center">
-                        <a href="https://cse.ucsd.edu/undergraduate/readers-and-tutors">
-                            <img src="imgs/tutor.png" alt="autograder" class="img-thumbnail">
-                        </a>
-                        <h4 class="text-primary text-capitalize text-center">
-                            CSE Undergraduate TA @ UCSD
-                        </h4>
-                        <p class="text-muted fs-5 fw-lighter text-center">April 2019 - Present</p>
-                        <p class="fw-light fs-5">
-                            I worked in the CSE department at UCSD under Professor
-                            <a href="https://jacobsschool.ucsd.edu/faculty/profile?id=300">Gary Gillespie</a>.
-                            The courses I've worked with 
-                            CSE 12 (Basic Data Structures) and CSE 15L (Software Tools)
-                            I have been a head tutor for CSE 12 from Winter 2021.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4">
-                    <div class="portfoli-item justify-content-center">
-                        <a href="https://autograder.ucsd.edu/">
-                            <img src="imgs/ag_project.png" alt="img" class="img-thumbnail">
-                        </a>
-                        <h4 class="text-primary text-capitalize text-center">
-                            Software Architect @ Autograder
-                        </h4>
-                        <p class="text-muted fs-5 fw-lighter text-center">September 2019 - Present</p>
-                        <p class="fw-light fs-5">
-                            I am managing and developing on a team revamping 
-                            a legacy web application used by 3000+ UCSD CSE 
-                            students and professors to manage tutor queues and 
-                            assignments.
-                            I am leading backend development of a codebase 
-                            rewrite to provide an easily maintainable 
-                            and improved database system and Web API.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4">
-                    <div class="portfoli-item justify-content-center">
-                        <a href="http://chf.ucsd.edu/project-limbitless/">
-                            <img src="imgs/lim.png" alt="img" class="img-thumbnail">
-                        </a>
-                        <h4 class="text-primary text-capitalize text-center">
-                            Project Lim[b]itless
-                        </h4>
-                        <p class="text-muted fs-5 fw-lighter text-center">October 2020 - Present</p>
-                        <p class="fw-light fs-5">
-                            I am resarching in the Lim[b]itless group
-                            at <a href="https://qi.ucsd.edu/">Qualcomm Insitute</a>
-                            working building a pipline that increase the 
-                            avlability of prosthesis to the amuptees.
-                            I am in charge of using transfer learning
-                            over the DeepLab deep learning network to perform 
-                            backgroud removal on the input images.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4">
-                    <div class="portfoli-item justify-content-center">
-                        <a href="https://math.ucsd.edu/undergraduate/honors-program/honors-program-information/index.html">
-                            <img src="imgs/cheby.png" alt="img" class="img-thumbnail">
-                        </a>
-                        <h4 class="text-primary text-capitalize text-center">
-                            UCSD Math Honor Project
-                        </h4>
-                        <p class="text-muted fs-5 fw-lighter text-center">September 2020 - Present</p>
-                        <p class="fw-light fs-5">
-                            I am completing my honor's project under Professor <a href="http://www.math.ucsd.edu/~mdressler/">Mareike Dressler</a>. 
-                            I am investigating on the numerical effects that
-                            different polynomial bases have when trying to 
-                            certificate the nonegativity of polynomails.
-                            A working version of my thesis can be viewd <a href="src/main.pdf">here</a>.
-                        </p>
+    
+                    <div class="col-md-6 col-lg-4">
+                        <div class="portfoli-item justify-content-center">
+                            <a href="https://math.ucsd.edu/undergraduate/honors-program/honors-program-information/index.html">
+                                <img src="imgs/cheby.png" alt="img" class="img-thumbnail">
+                            </a>
+                            <h4 class="text-primary text-capitalize text-center">
+                                UCSD Math Honor Project
+                            </h4>
+                            <p class="text-muted fs-5 fw-lighter text-center">Jan. 2021 - Jun. 2022</p>
+                            <p class="fw-light fs-5">
+                                I completed my honor's project under Professor <a href="https://web.maths.unsw.edu.au/~mdressler/">Mareike Dressler</a>. 
+                                I investigated on the numerical effects that
+                                different polynomial bases have when trying to 
+                                certificate the nonegativity of polynomials.
+                                My thesis can be viewed <a href="src/main.pdf">here</a>.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -278,7 +298,7 @@
 
     <!--contact section start-->
 
-    <section class="contact bg-white py-5" id="contacts">
+    <section class="contact bg-gradient py-5" id="contacts">
         <div class="py-2"></div>
         <div class="container-lg py-4">
             <div class="row justify-content-center">
@@ -339,5 +359,20 @@
     <script src="https://kit.fontawesome.com/c31e42784d.js" crossorigin="anonymous"></script>
     <script src="js/typewriter.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        var collapseElement = document.getElementById('workExperiences');
+        var toggleIcon = document.getElementById('toggleIcon');
+    
+        collapseElement.addEventListener('show.bs.collapse', function () {
+            toggleIcon.classList.remove('bi-chevron-right');
+            toggleIcon.classList.add('bi-chevron-down');
+        });
+    
+        collapseElement.addEventListener('hide.bs.collapse', function () {
+            toggleIcon.classList.remove('bi-chevron-down');
+            toggleIcon.classList.add('bi-chevron-right');
+        });
+    </script>
 </body>
 </html>
